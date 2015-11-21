@@ -54,6 +54,7 @@ GEM
     mime-types (2.6.2)
     minitest (5.8.1)
     multi_json (1.11.2)
+    pg (0.17.1)
     pry (0.9.12.6)
       coderay (~> 1.0)
       method_source (~> 0.8)
@@ -122,6 +123,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   coffee-rails (~> 4.0.0)
   jquery-rails
+  pg
   pry
   rails (= 4.1.7)
   rails_12factor
