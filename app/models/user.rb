@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
   has_secure_password
   before_save :set_auth_token
 
-  has_many :team_memberships
+  has_many :team_memberships, dependent: :destroy
   has_many :monsters, through: :team_memberships
   validates_presence_of :email
   validates_presence_of :password
