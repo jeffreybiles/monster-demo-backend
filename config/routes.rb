@@ -7,6 +7,10 @@ Rails.application.routes.draw do
   resources :team_memberships
   resources :sessions, only: [:create]
   post 'token' => 'sessions#create'
+
+  namespace :v2 do
+    resources :monsters
+  end
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
