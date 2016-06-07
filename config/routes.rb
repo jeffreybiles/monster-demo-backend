@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :sessions, only: [:create]
   post 'token' => 'sessions#create'
 
+  root to: 'root#index'
   namespace :v2 do
     resources :monsters
   end
