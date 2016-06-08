@@ -2,6 +2,8 @@ class RootController < ApplicationController
   respond_to :html
 
   def index
+    puts "current revision key: #{current_revision_key}"
+    puts html
     render text: html
   end
 
